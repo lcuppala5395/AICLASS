@@ -1,0 +1,930 @@
+{
+  "rfp_run_id": "RFP-20261018-093020-2427",
+  "created_at": "2026-10-18T09:30:20+00:00",
+  "status": "completed_with_warnings",
+  "llm": {
+    "provider": "offline-demo-messy",
+    "model": "keyword-heuristic-v1-messy"
+  },
+  "prompt_version": "v1",
+  "criteria": [
+    {
+      "criterion_id": 1,
+      "name": "Technical Capability",
+      "description": "Architecture, integrations, scalability, technical fit",
+      "weight": 30.0,
+      "weight_normalised": 30.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 2,
+      "name": "Implementation Plan",
+      "description": "Timeline, milestones, staffing, risk plan",
+      "weight": 20.0,
+      "weight_normalised": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 3,
+      "name": "Commercial Value",
+      "description": "Pricing clarity, total cost, assumptions",
+      "weight": 20.0,
+      "weight_normalised": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 4,
+      "name": "Security & Compliance",
+      "description": "Controls, certifications, privacy, auditability",
+      "weight": 20.0,
+      "weight_normalised": 20.0,
+      "max_score": 10
+    },
+    {
+      "criterion_id": 5,
+      "name": "Support & Experience",
+      "description": "Support model, similar projects, references",
+      "weight": 10.0,
+      "weight_normalised": 10.0,
+      "max_score": 10
+    }
+  ],
+  "weights_rescaled": false,
+  "benchmarks": {
+    "1": 10.0,
+    "2": 10.0,
+    "3": 10.0,
+    "4": 10.0,
+    "5": 10.0
+  },
+  "tie_break_rule": "1) Higher PPI  ->  2) Earlier submission date  ->  3) Higher historical experience rating  ->  4) Supplier name A-Z",
+  "tie_break_explanation": [
+    "No tie-breaks were needed: every supplier has a distinct PPI."
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "supplier_name": "NexaWorks",
+      "absolute_score": 94.0,
+      "ppi": 94.0,
+      "submission_date": "2026-10-06",
+      "experience_rating": 4.2,
+      "decided_by": "-"
+    },
+    {
+      "rank": 2,
+      "supplier_name": "Apex Systems",
+      "absolute_score": 90.0,
+      "ppi": 90.0,
+      "submission_date": "2026-10-05",
+      "experience_rating": 4.5,
+      "decided_by": "PPI"
+    },
+    {
+      "rank": 3,
+      "supplier_name": "Quantum Leaf Solutions",
+      "absolute_score": 65.0,
+      "ppi": 65.0,
+      "submission_date": "2026-10-09",
+      "experience_rating": 3.0,
+      "decided_by": "PPI"
+    },
+    {
+      "rank": 4,
+      "supplier_name": "BrightPath Tech",
+      "absolute_score": 52.0,
+      "ppi": 52.0,
+      "submission_date": "2026-10-08",
+      "experience_rating": 2.0,
+      "decided_by": "PPI"
+    },
+    {
+      "rank": 5,
+      "supplier_name": "Orbit Digital",
+      "absolute_score": 46.0,
+      "ppi": 46.0,
+      "submission_date": "2026-10-06",
+      "experience_rating": 4.8,
+      "decided_by": "PPI"
+    },
+    {
+      "rank": 6,
+      "supplier_name": "Vertex Cloudware",
+      "absolute_score": 24.0,
+      "ppi": 24.0,
+      "submission_date": "2026-10-10",
+      "experience_rating": 2.5,
+      "decided_by": "PPI"
+    }
+  ],
+  "suppliers": [
+    {
+      "supplier_name": "NexaWorks",
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "score": 8.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 9 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Integration with SAP S/4HANA uses a supported connector with scheduled and event-driven ... synchronisation; Azure AD SSO uses SAML 2.0.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 30.0,
+          "weight_normalised": 30.0,
+          "points": 24.0,
+          "benchmark": 10.0,
+          "gap": -2.0,
+          "relative_pct": 80.0
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 13 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Timeline, Team Structure and Milestones ... The core team has 8 people: delivery manager, solution architect, three",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 7 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Price Table and Assumptions ... Three-year total: USD 895,000.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 10 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Data is encrypted at rest and in transit, access is role-based with multi-factor authentication, and audit logs ... NexaWorks is ISO 27001 certified.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Support Model, Experience and References ... A 24x7 service desk handles severity 1 and 2 issues with a 1-hour response target.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 10.0,
+          "weight_normalised": 10.0,
+          "points": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        }
+      ],
+      "risks": [
+        "two sources, 3% annual cap on increases, taxes excluded."
+      ],
+      "overall_summary": "[offline demo scorer] 5 of 5 criteria showed substantive evidence.",
+      "warnings": [],
+      "raw_llm_output": "Here is the evaluation:\n```json\n{\"supplier_name\": \"NexaWorks\", \"criteria\": [{\"criterion_id\": 1, \"score\": 8, \"max_score\": 10, \"justification\": \"[offline demo scorer] 9 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Integration with SAP S/4HANA uses a supported connector with scheduled and event-driven ... synchronisation; Azure AD SSO uses SAML 2.0.\"}, {\"criterion_id\": 2, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 13 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Timeline, Team Structure and Milestones ... The core team has 8 people: delivery manager, solution architect, three\"}, {\"criterion_id\": 3, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 7 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Price Table and Assumptions ... Three-year total: USD 895,000.\"}, {\"criterion_id\": 4, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 10 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Data is encrypted at rest and in transit, access is role-based with multi-factor authentication, and audit logs ... NexaWorks is ISO 27001 certified.\"}, {\"criterion_id\": 5, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Support Model, Experience and References ... A 24x7 service desk handles severity 1 and 2 issues with a 1-hour response target.\"}], \"risks\": [\"two sources, 3% annual cap on increases, taxes excluded.\"], \"overall_summary\": \"[offline demo scorer] 5 of 5 criteria showed substantive evidence.\"}\n```\nHope this helps!",
+      "filename": "03_NexaWorks_RFP.pdf",
+      "submission_date": "2026-10-06",
+      "experience_rating": 4.2,
+      "document": {
+        "filename": "03_NexaWorks_RFP.pdf",
+        "sha256": "404512108b772c5503b959559b51ce7453206d82f5c4c44ba5b0f6fa1e041f98",
+        "pages": 2,
+        "characters": 3820,
+        "truncated": false
+      },
+      "absolute_score": 94.0,
+      "ppi": 94.0,
+      "rank": 1,
+      "decided_by": "-"
+    },
+    {
+      "supplier_name": "Apex Systems",
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "",
+          "evidence": "The integration layer uses certified SAP connectors (OData and ... The platform runs on a multi-region Kubernetes deployment with horizontal autoscaling.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 30.0,
+          "weight_normalised": 30.0,
+          "points": 30.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 12 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Timeline, Team Structure and Milestones ... Our team of 9 comprises a delivery manager, two",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Three-year total: USD 1,100,000 (excludes taxes). ... suppliers, 300 named users, data migration from two legacy sources, annual price uplift capped at 3%",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 15 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Apex holds ISO 27001 and SOC 2 Type II certifications, renewed annually; audit reports are available ... Role-based access control, immutable audit logs retained for seven years, and quarterly",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "score": 0.0,
+          "max_score": 10.0,
+          "valid": false,
+          "justification": "",
+          "evidence": "Not provided",
+          "evidence_verified": null,
+          "flags": [
+            "missing"
+          ],
+          "weight": 10.0,
+          "weight_normalised": 10.0,
+          "points": 0.0,
+          "benchmark": 10.0,
+          "gap": -10.0,
+          "relative_pct": 0.0
+        }
+      ],
+      "risks": [],
+      "overall_summary": "[offline demo scorer] 5 of 5 criteria showed substantive evidence.",
+      "warnings": [
+        "'Technical Capability': no justification returned.",
+        "'Support & Experience': missing from LLM output; score set to 0 and excluded from the benchmark."
+      ],
+      "raw_llm_output": "{\"supplier_name\": \"Apex Systems\", \"criteria\": [{\"criterion_id\": 1, \"score\": 10, \"max_score\": 10, \"evidence\": \"The integration layer uses certified SAP connectors (OData and ... The platform runs on a multi-region Kubernetes deployment with horizontal autoscaling.\"}, {\"criterion_id\": 2, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 12 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Timeline, Team Structure and Milestones ... Our team of 9 comprises a delivery manager, two\"}, {\"criterion_id\": 3, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Three-year total: USD 1,100,000 (excludes taxes). ... suppliers, 300 named users, data migration from two legacy sources, annual price uplift capped at 3%\"}, {\"criterion_id\": 4, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 15 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Apex holds ISO 27001 and SOC 2 Type II certifications, renewed annually; audit reports are available ... Role-based access control, immutable audit logs retained for seven years, and quarterly\"}], \"risks\": [], \"overall_summary\": \"[offline demo scorer] 5 of 5 criteria showed substantive evidence.\"}",
+      "filename": "01_Apex_Systems_RFP.pdf",
+      "submission_date": "2026-10-05",
+      "experience_rating": 4.5,
+      "document": {
+        "filename": "01_Apex_Systems_RFP.pdf",
+        "sha256": "334285594324cf4590017d1bebb7a24e4bd65371fa0e6da86e6741b0d95ff8c4",
+        "pages": 2,
+        "characters": 4434,
+        "truncated": false
+      },
+      "absolute_score": 90.0,
+      "ppi": 90.0,
+      "rank": 2,
+      "decided_by": "PPI"
+    },
+    {
+      "supplier_name": "Quantum Leaf Solutions",
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "score": 7.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "SAP integration uses a standard REST adapter that supports master data ... Azure AD SSO is supported with SAML 2.0.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 30.0,
+          "weight_normalised": 30.0,
+          "points": 21.0,
+          "benchmark": 10.0,
+          "gap": -3.0,
+          "relative_pct": 70.0
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "score": 0.0,
+          "max_score": 10.0,
+          "valid": false,
+          "justification": "[offline demo scorer] 7 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "Timeline, Team Structure and Milestones ... Delivery is planned over 9 months with a core team of 6: project manager, architect, two engineers, a QA",
+          "evidence_verified": true,
+          "flags": [
+            "invalid_score"
+          ],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 0.0,
+          "benchmark": 10.0,
+          "gap": -10.0,
+          "relative_pct": 0.0
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 10 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "subscription uplift limited to CPI (maximum 4%); additional users USD 350 per user per year; data ... Price Table and Assumptions",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 20.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "score": 9.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Quantum Leaf encrypts data at rest and in transit and offers role-based access with optional multi-factor ... Our hosting provider holds SOC 2 and ISO 27001 certification; Quantum Leaf itself is not",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 18.0,
+          "benchmark": 10.0,
+          "gap": -1.0,
+          "relative_pct": 90.0
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "score": 6.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Support Model, Experience and References ... Support runs on business hours (8x5) with a 4-hour response target for critical issues; extended-hours",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 10.0,
+          "weight_normalised": 10.0,
+          "points": 6.0,
+          "benchmark": 10.0,
+          "gap": -4.0,
+          "relative_pct": 60.0
+        }
+      ],
+      "risks": [
+        "what is and is not included.",
+        "configuration are limited to those listed in the price table; further work is available through a published rate",
+        "A basic risk list is included in the project plan; formal risk workshops are not part of the standard scope."
+      ],
+      "overall_summary": "[offline demo scorer] 5 of 5 criteria showed substantive evidence.",
+      "warnings": [
+        "Entry with unknown criterion_id 99 was ignored.",
+        "'Implementation Plan': score 'n/a' is not numeric; set to 0 and excluded from the benchmark."
+      ],
+      "raw_llm_output": "{\"supplier_name\": \"Quantum Leaf Solutions\", \"criteria\": [{\"criterion_id\": 1, \"score\": \"7/10\", \"max_score\": 10, \"justification\": \"[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"SAP integration uses a standard REST adapter that supports master data ... Azure AD SSO is supported with SAML 2.0.\"}, {\"criterion_id\": 2, \"score\": \"n/a\", \"max_score\": 10, \"justification\": \"[offline demo scorer] 7 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"Timeline, Team Structure and Milestones ... Delivery is planned over 9 months with a core team of 6: project manager, architect, two engineers, a QA\"}, {\"criterion_id\": 3, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 10 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"subscription uplift limited to CPI (maximum 4%); additional users USD 350 per user per year; data ... Price Table and Assumptions\"}, {\"criterion_id\": 4, \"score\": 9, \"max_score\": 10, \"justification\": \"[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Quantum Leaf encrypts data at rest and in transit and offers role-based access with optional multi-factor ... Our hosting provider holds SOC 2 and ISO 27001 certification; Quantum Leaf itself is not\"}, {\"criterion_id\": 5, \"score\": 6, \"max_score\": 10, \"justification\": \"[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Support Model, Experience and References ... Support runs on business hours (8x5) with a 4-hour response target for critical issues; extended-hours\"}, {\"criterion_id\": 99, \"score\": 7, \"max_score\": 10, \"justification\": \"?\", \"evidence\": \"?\"}], \"risks\": [\"what is and is not included.\", \"configuration are limited to those listed in the price table; further work is available through a published rate\", \"A basic risk list is included in the project plan; formal risk workshops are not part of the standard scope.\"], \"overall_summary\": \"[offline demo scorer] 5 of 5 criteria showed substantive evidence.\"}",
+      "filename": "05_Quantum_Leaf_Solutions_RFP.pdf",
+      "submission_date": "2026-10-09",
+      "experience_rating": 3.0,
+      "document": {
+        "filename": "05_Quantum_Leaf_Solutions_RFP.pdf",
+        "sha256": "6b9975e2fa5e4e3d7f5b904cea659e988ecba28a182d9fe8c0d4d4bc1ce2871e",
+        "pages": 2,
+        "characters": 3146,
+        "truncated": false
+      },
+      "absolute_score": 65.0,
+      "ppi": 65.0,
+      "rank": 3,
+      "decided_by": "PPI"
+    },
+    {
+      "supplier_name": "BrightPath Tech",
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 3 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "ERP integration is handled through a CSV import and export routine that runs nightly. ... connector is on our roadmap for later this year.",
+          "evidence_verified": true,
+          "flags": [
+            "clipped"
+          ],
+          "weight": 30.0,
+          "weight_normalised": 30.0,
+          "points": 30.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "score": 0.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Timeline, Team and Milestones ... We commit to go-live in 5 months.",
+          "evidence_verified": true,
+          "flags": [
+            "clipped"
+          ],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 0.0,
+          "benchmark": 10.0,
+          "gap": -10.0,
+          "relative_pct": 0.0
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "score": 7.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Price Table and Assumptions ... Three-year total: USD 570,000.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 14.0,
+          "benchmark": 10.0,
+          "gap": -3.0,
+          "relative_pct": 70.0
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "score": 1.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 2 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "BrightPath uses a reputable cloud provider and encrypts data in transit. ... Security certification is in progress.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 2.0,
+          "benchmark": 10.0,
+          "gap": -9.0,
+          "relative_pct": 10.0
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "score": 6.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 5 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "Support is available during business hours by email and chat, with a typical response within one business ... Reference contacts can be provided on",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 10.0,
+          "weight_normalised": 10.0,
+          "points": 6.0,
+          "benchmark": 10.0,
+          "gap": -4.0,
+          "relative_pct": 60.0
+        }
+      ],
+      "risks": [
+        "No formal risk plan is included in this response; risks will be managed as they arise.",
+        "Security certification is in progress."
+      ],
+      "overall_summary": "[offline demo scorer] 2 of 5 criteria showed substantive evidence.",
+      "warnings": [
+        "'Technical Capability': score 14 is outside 0-10; clipped to 10.",
+        "'Implementation Plan': score -2 is outside 0-10; clipped to 0."
+      ],
+      "raw_llm_output": "{\"supplier_name\": \"BrightPath Tech\", \"criteria\": [{\"criterion_id\": 1, \"score\": 14, \"max_score\": 10, \"justification\": \"[offline demo scorer] 3 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"ERP integration is handled through a CSV import and export routine that runs nightly. ... connector is on our roadmap for later this year.\"}, {\"criterion_id\": 2, \"score\": -2, \"max_score\": 10, \"justification\": \"[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Timeline, Team and Milestones ... We commit to go-live in 5 months.\"}, {\"criterion_id\": 3, \"score\": 7, \"max_score\": 10, \"justification\": \"[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Price Table and Assumptions ... Three-year total: USD 570,000.\"}, {\"criterion_id\": 4, \"score\": 1, \"max_score\": 10, \"justification\": \"[offline demo scorer] 2 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"BrightPath uses a reputable cloud provider and encrypts data in transit. ... Security certification is in progress.\"}, {\"criterion_id\": 5, \"score\": 6, \"max_score\": 10, \"justification\": \"[offline demo scorer] 5 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"Support is available during business hours by email and chat, with a typical response within one business ... Reference contacts can be provided on\"}], \"risks\": [\"No formal risk plan is included in this response; risks will be managed as they arise.\", \"Security certification is in progress.\"], \"overall_summary\": \"[offline demo scorer] 2 of 5 criteria showed substantive evidence.\"}",
+      "filename": "02_BrightPath_Tech_RFP.pdf",
+      "submission_date": "2026-10-08",
+      "experience_rating": 2.0,
+      "document": {
+        "filename": "02_BrightPath_Tech_RFP.pdf",
+        "sha256": "3e022c4827e5e1f151df83868e7f127471b2ec5ad64baa5ad92d23963e34c2af",
+        "pages": 2,
+        "characters": 2618,
+        "truncated": false
+      },
+      "absolute_score": 52.0,
+      "ppi": 52.0,
+      "rank": 4,
+      "decided_by": "PPI"
+    },
+    {
+      "supplier_name": "Orbit Digital",
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "score": 2.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 3 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "Integration with existing enterprise systems will be carried out using our flexible integration ... scales as needed to meet the client's volumes.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 30.0,
+          "weight_normalised": 30.0,
+          "points": 6.0,
+          "benchmark": 10.0,
+          "gap": -8.0,
+          "relative_pct": 20.0
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "score": 5.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 5 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "Timeline, Team and Milestones ... and a stable team to the Meridian programme.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 10.0,
+          "benchmark": 10.0,
+          "gap": -5.0,
+          "relative_pct": 50.0
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "score": 7.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Price Table and Assumptions ... Three-year total: USD 950,000.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 14.0,
+          "benchmark": 10.0,
+          "gap": -3.0,
+          "relative_pct": 70.0
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "score": 3.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 3 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Orbit maintains ISO 27001 certification and follows a documented information security policy. ... encrypted and access is controlled by roles.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 6.0,
+          "benchmark": 10.0,
+          "gap": -7.0,
+          "relative_pct": 30.0
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "score": 10.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Support is delivered through a 24x5 service desk with a named account manager. ... Support Model, Experience and References",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 10.0,
+          "weight_normalised": 10.0,
+          "points": 10.0,
+          "benchmark": 10.0,
+          "gap": 0.0,
+          "relative_pct": 100.0
+        }
+      ],
+      "risks": [
+        "Further detail is available on request."
+      ],
+      "overall_summary": "[offline demo scorer] 2 of 5 criteria showed substantive evidence.",
+      "warnings": [
+        "LLM output was not valid JSON on the first attempt; the request was retried once."
+      ],
+      "raw_llm_output": "{\"supplier_name\": \"Orbit Digital\", \"criteria\": [{\"criterion_id\": 1, \"score\": 2, \"max_score\": 10, \"justification\": \"[offline demo scorer] 3 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"Integration with existing enterprise systems will be carried out using our flexible integration ... scales as needed to meet the client's volumes.\"}, {\"criterion_id\": 2, \"score\": 5, \"max_score\": 10, \"justification\": \"[offline demo scorer] 5 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"Timeline, Team and Milestones ... and a stable team to the Meridian programme.\"}, {\"criterion_id\": 3, \"score\": 7, \"max_score\": 10, \"justification\": \"[offline demo scorer] 5 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Price Table and Assumptions ... Three-year total: USD 950,000.\"}, {\"criterion_id\": 4, \"score\": 3, \"max_score\": 10, \"justification\": \"[offline demo scorer] 3 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Orbit maintains ISO 27001 certification and follows a documented information security policy. ... encrypted and access is controlled by roles.\"}, {\"criterion_id\": 5, \"score\": 10, \"max_score\": 10, \"justification\": \"[offline demo scorer] 8 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Support is delivered through a 24x5 service desk with a named account manager. ... Support Model, Experience and References\"}], \"risks\": [\"Further detail is available on request.\"], \"overall_summary\": \"[offline demo scorer] 2 of 5 criteria showed substantive evidence.\"}",
+      "filename": "04_Orbit_Digital_RFP.pdf",
+      "submission_date": "2026-10-06",
+      "experience_rating": 4.8,
+      "document": {
+        "filename": "04_Orbit_Digital_RFP.pdf",
+        "sha256": "cc0a93579870a932aca313a577fd42651484993acd115470b359b58116be1eea",
+        "pages": 2,
+        "characters": 2702,
+        "truncated": false
+      },
+      "absolute_score": 46.0,
+      "ppi": 46.0,
+      "rank": 5,
+      "decided_by": "PPI"
+    },
+    {
+      "supplier_name": "Vertex Cloudware",
+      "criteria": [
+        {
+          "criterion_id": 1,
+          "name": "Technical Capability",
+          "score": 2.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 3 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "Technical details, architecture and integration specifics will be shared during the detailed design phase. ... Vertex will provide a modern, intuitive, scalable and secure supplier management platform.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 30.0,
+          "weight_normalised": 30.0,
+          "points": 6.0,
+          "benchmark": 10.0,
+          "gap": -8.0,
+          "relative_pct": 20.0
+        },
+        {
+          "criterion_id": 2,
+          "name": "Implementation Plan",
+          "score": 2.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 3 relevant indicators found; 2 vague or deferred statement(s).",
+          "evidence": "Our leadership team brings extensive experience from the ... Implementation is expected to take between 6 and 10 months depending on scope and client readiness.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 4.0,
+          "benchmark": 10.0,
+          "gap": -8.0,
+          "relative_pct": 20.0
+        },
+        {
+          "criterion_id": 3,
+          "name": "Commercial Value",
+          "score": 5.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 4 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "will meet all the functional requirements in the RFP and will integrate with Meridian's existing landscape. ... new capabilities that will further enhance the experience over time.",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 10.0,
+          "benchmark": 10.0,
+          "gap": -5.0,
+          "relative_pct": 50.0
+        },
+        {
+          "criterion_id": 4,
+          "name": "Security & Compliance",
+          "score": 0.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 0 relevant indicators found; 0 vague or deferred statement(s).",
+          "evidence": "Not provided",
+          "evidence_verified": null,
+          "flags": [],
+          "weight": 20.0,
+          "weight_normalised": 20.0,
+          "points": 0.0,
+          "benchmark": 10.0,
+          "gap": -10.0,
+          "relative_pct": 0.0
+        },
+        {
+          "criterion_id": 5,
+          "name": "Support & Experience",
+          "score": 4.0,
+          "max_score": 10.0,
+          "valid": true,
+          "justification": "[offline demo scorer] 4 relevant indicators found; 1 vague or deferred statement(s).",
+          "evidence": "Our support team is committed to customer success. ... Response to Request for Proposal",
+          "evidence_verified": true,
+          "flags": [],
+          "weight": 10.0,
+          "weight_normalised": 10.0,
+          "points": 4.0,
+          "benchmark": 10.0,
+          "gap": -6.0,
+          "relative_pct": 40.0
+        }
+      ],
+      "risks": [
+        "Technical details, architecture and integration specifics will be shared during the detailed design phase.",
+        "Milestones will be agreed in the project",
+        "References are available on request."
+      ],
+      "overall_summary": "[offline demo scorer] 0 of 5 criteria showed substantive evidence.",
+      "warnings": [],
+      "raw_llm_output": "{\"supplier_name\": \"Vertex Cloudware\", \"criteria\": [{\"criterion_id\": 1, \"score\": 2, \"max_score\": 10, \"justification\": \"[offline demo scorer] 3 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"Technical details, architecture and integration specifics will be shared during the detailed design phase. ... Vertex will provide a modern, intuitive, scalable and secure supplier management platform.\"}, {\"criterion_id\": 2, \"score\": 2, \"max_score\": 10, \"justification\": \"[offline demo scorer] 3 relevant indicators found; 2 vague or deferred statement(s).\", \"evidence\": \"Our leadership team brings extensive experience from the ... Implementation is expected to take between 6 and 10 months depending on scope and client readiness.\"}, {\"criterion_id\": 3, \"score\": 5, \"max_score\": 10, \"justification\": \"[offline demo scorer] 4 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"will meet all the functional requirements in the RFP and will integrate with Meridian's existing landscape. ... new capabilities that will further enhance the experience over time.\"}, {\"criterion_id\": 4, \"score\": 0, \"max_score\": 10, \"justification\": \"[offline demo scorer] 0 relevant indicators found; 0 vague or deferred statement(s).\", \"evidence\": \"Not provided\"}, {\"criterion_id\": 5, \"score\": 4, \"max_score\": 10, \"justification\": \"[offline demo scorer] 4 relevant indicators found; 1 vague or deferred statement(s).\", \"evidence\": \"Our support team is committed to customer success. ... Response to Request for Proposal\"}], \"risks\": [\"Technical details, architecture and integration specifics will be shared during the detailed design phase.\", \"Milestones will be agreed in the project\", \"References are available on request.\"], \"overall_summary\": \"[offline demo scorer] 0 of 5 criteria showed substantive evidence.\"}",
+      "filename": "06_Vertex_Cloudware_RFP.pdf",
+      "submission_date": "2026-10-10",
+      "experience_rating": 2.5,
+      "document": {
+        "filename": "06_Vertex_Cloudware_RFP.pdf",
+        "sha256": "ef5c03e5e0e24be8376ca778fb3853cd3a207a865b74c249275fb6ae4212afdf",
+        "pages": 2,
+        "characters": 2987,
+        "truncated": false
+      },
+      "absolute_score": 24.0,
+      "ppi": 24.0,
+      "rank": 6,
+      "decided_by": "PPI"
+    }
+  ],
+  "failed_suppliers": [],
+  "warnings": [
+    "Apex Systems: 'Technical Capability': no justification returned.",
+    "Apex Systems: 'Support & Experience': missing from LLM output; score set to 0 and excluded from the benchmark.",
+    "BrightPath Tech: 'Technical Capability': score 14 is outside 0-10; clipped to 10.",
+    "BrightPath Tech: 'Implementation Plan': score -2 is outside 0-10; clipped to 0.",
+    "Orbit Digital: LLM output was not valid JSON on the first attempt; the request was retried once.",
+    "Quantum Leaf Solutions: Entry with unknown criterion_id 99 was ignored.",
+    "Quantum Leaf Solutions: 'Implementation Plan': score 'n/a' is not numeric; set to 0 and excluded from the benchmark."
+  ],
+  "trace": [
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "3 Batch",
+      "supplier": "",
+      "message": "Created run RFP-20261018-093020-2427 with 6 supplier(s) using offline-demo-messy/keyword-heuristic-v1-messy"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "4 Evaluate",
+      "supplier": "",
+      "message": "Reloaded 5 active criteria from SQLite (weights total 100%)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "4 Evaluate",
+      "supplier": "Apex Systems",
+      "message": "Extracted 2 page(s), 4,434 characters"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "5 Validate",
+      "supplier": "Apex Systems",
+      "message": "Scorecard validated with 2 warning(s)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "4 Evaluate",
+      "supplier": "BrightPath Tech",
+      "message": "Extracted 2 page(s), 2,618 characters"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "5 Validate",
+      "supplier": "BrightPath Tech",
+      "message": "Scorecard validated with 2 warning(s)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "4 Evaluate",
+      "supplier": "NexaWorks",
+      "message": "Extracted 2 page(s), 3,820 characters"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "5 Validate",
+      "supplier": "NexaWorks",
+      "message": "Scorecard validated with 0 warning(s)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "4 Evaluate",
+      "supplier": "Orbit Digital",
+      "message": "Extracted 2 page(s), 2,702 characters"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "5 Validate",
+      "supplier": "Orbit Digital",
+      "message": "LLM output was not valid JSON (malformed JSON (Unterminated string starting at)); retrying once"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "5 Validate",
+      "supplier": "Orbit Digital",
+      "message": "Scorecard validated with 1 warning(s)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "4 Evaluate",
+      "supplier": "Quantum Leaf Solutions",
+      "message": "Extracted 2 page(s), 3,146 characters"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "5 Validate",
+      "supplier": "Quantum Leaf Solutions",
+      "message": "Scorecard validated with 2 warning(s)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "4 Evaluate",
+      "supplier": "Vertex Cloudware",
+      "message": "Extracted 2 page(s), 2,987 characters"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "5 Validate",
+      "supplier": "Vertex Cloudware",
+      "message": "Scorecard validated with 0 warning(s)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "6 Score",
+      "supplier": "",
+      "message": "Absolute weighted scores calculated for 6 supplier(s)"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "7 Benchmark",
+      "supplier": "",
+      "message": "Best valid score per criterion found: #1=10, #2=10, #3=10, #4=10, #5=10"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "8 Rank",
+      "supplier": "",
+      "message": "PPI calculated; ranking applied: 1) Higher PPI  ->  2) Earlier submission date  ->  3) Higher historical experience rating  ->  4) Supplier name A-Z"
+    },
+    {
+      "time": "2026-10-18T09:30:20+00:00",
+      "step": "9 Persist",
+      "supplier": "",
+      "message": "Saving complete result under RFP-20261018-093020-2427 with status 'completed_with_warnings'"
+    }
+  ]
+}

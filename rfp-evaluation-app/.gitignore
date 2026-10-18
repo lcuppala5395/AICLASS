@@ -1,0 +1,15 @@
+# secrets and local state
+.streamlit/secrets.toml
+.env
+*.db
+*.sqlite3
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# packaging output
+*.zip
